@@ -51,6 +51,7 @@
     $content = substr($content, 0, strpos($content, " ("));
     $content = str_replace(' ', '.', $content);
     $content = preg_replace('/[^A-Za-z0-9\.]/', '', $content);
+    $content = str_replace('..', '.', $content);
     //echo $content;
 
     //gets the match content
